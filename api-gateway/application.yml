@@ -47,14 +47,14 @@ spring:
         - id: tweet-service
           uri: lb://TWEET-SERVICE
           predicates:
-            - Path=/api/v1/tweets/**,/api/v1/likes/**,/api/v1/retweets/**,/api/v1/replies/**
+            - Path=/api/v1/tweet/**,/api/v1/tweets/**,/api/v1/like/**,/api/v1/retweet/**,/api/v1/retweets/**,/api/v1/reply/**,/api/v1/replies/**
           filters:
             - Authentication
 
         - id: timeline-service
           uri: lb://TIMELINE-SERVICE
           predicates:
-            - Path=/api/v1/timelines/**
+            - Path=/api/v1/timeline/**
           filters:
             - Authentication
 
