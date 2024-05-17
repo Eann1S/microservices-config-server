@@ -44,3 +44,6 @@ management:
 services:
   storage:
     name: storage-service
+    
+special:
+  celebrity-followers-threshold: ${CELEBRITY_FOLLOWERS_THRESHOLD}
